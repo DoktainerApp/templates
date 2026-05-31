@@ -14,7 +14,7 @@
     "Devtool"
   ],
   "presentation": {
-    "icon": "https://github.com/DoktainerApp/templates/blob/main/templates/erd-builder-pro/logo.png?raw=true",
+    "icon": "logo.png",
     "installs": 0
   }
 }
