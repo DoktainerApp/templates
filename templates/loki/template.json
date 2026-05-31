@@ -1,0 +1,19 @@
+{
+  "id": "loki",
+  "name": "Loki",
+  "desc": "Log aggregation system designed for Grafana",
+  "category": "Monitoring",
+  "image": "grafana/loki:latest",
+  "defaultPort": "3100:3100",
+  "defaultEnv": "",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Logs",
+    "Grafana"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/grafana/F46800",
+    "installs": 180
+  }
+}

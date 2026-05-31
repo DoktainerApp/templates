@@ -1,0 +1,20 @@
+{
+  "id": "portainer",
+  "name": "Portainer",
+  "desc": "Docker container management UI",
+  "category": "DevOps",
+  "image": "portainer/portainer-ce:latest",
+  "defaultPort": "9000:9000",
+  "defaultEnv": "",
+  "defaultVolumes": "/var/run/docker.sock:/var/run/docker.sock,/srv/portainer:/data",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Docker",
+    "UI"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/portainer/13BEF9",
+    "installs": 340
+  }
+}

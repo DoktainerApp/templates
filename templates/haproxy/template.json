@@ -1,0 +1,15 @@
+{
+  "id": "haproxy",
+  "name": "HAProxy",
+  "desc": "Battle-tested load balancer and TCP/HTTP proxy",
+  "category": "Proxy",
+  "image": "haproxy:2.9-alpine",
+  "defaultPort": "8404:8404,8084:80",
+  "defaultEnv": "",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Load Balancer",
+    "L4/L7"
+  ]
+}

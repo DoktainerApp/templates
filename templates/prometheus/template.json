@@ -1,0 +1,20 @@
+{
+  "id": "prometheus",
+  "name": "Prometheus",
+  "desc": "Open-source monitoring and alerting toolkit",
+  "category": "Monitoring",
+  "image": "prom/prometheus:latest",
+  "defaultPort": "9090:9090",
+  "defaultEnv": "",
+  "defaultVolumes": "/srv/prometheus:/prometheus",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Metrics",
+    "Alert"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/prometheus/E6522C",
+    "installs": 390
+  }
+}

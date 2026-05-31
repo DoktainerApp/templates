@@ -1,0 +1,19 @@
+{
+  "id": "cloudflare-tunnel",
+  "name": "Cloudflare Tunnel",
+  "desc": "Securely expose your local services to the internet via Cloudflare",
+  "category": "Network",
+  "image": "cloudflare/cloudflared:latest",
+  "defaultPort": "",
+  "defaultEnv": "TUNNEL_TOKEN=replace-me",
+  "defaultCommand": "tunnel --no-autoupdate run",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Network",
+    "Tunnel"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/cloudflare/F38020"
+  }
+}

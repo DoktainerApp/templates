@@ -1,0 +1,20 @@
+{
+  "id": "mariadb",
+  "name": "MariaDB",
+  "desc": "Open-source MySQL-compatible relational database",
+  "category": "Database",
+  "image": "mariadb:11",
+  "defaultPort": "3307:3306",
+  "defaultEnv": "MARIADB_DATABASE=mydb\nMARIADB_USER=username\nMARIADB_PASSWORD=changeme\nMARIADB_ROOT_PASSWORD=changeme",
+  "defaultVolumes": "/srv/mariadb:/var/lib/mysql",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "SQL",
+    "MySQL"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/mariadb/003545",
+    "installs": 430
+  }
+}

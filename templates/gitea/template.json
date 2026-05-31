@@ -1,0 +1,20 @@
+{
+  "id": "gitea",
+  "name": "Gitea",
+  "desc": "Lightweight self-hosted Git service with CI-friendly workflows",
+  "category": "DevOps",
+  "image": "gitea/gitea:1.22",
+  "defaultPort": "3003:3000,222:22",
+  "defaultEnv": "USER_UID=1000\nUSER_GID=1000",
+  "defaultVolumes": "/srv/gitea:/data",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Git",
+    "SCM"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/gitea/609926",
+    "installs": 590
+  }
+}

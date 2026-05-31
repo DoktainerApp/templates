@@ -1,0 +1,21 @@
+{
+  "id": "openclaw-alpine",
+  "name": "OpenClaw Alpine (Community Edition)",
+  "desc": "OpenClaw Alpine is a lightweight version of the OpenClaw platform, optimized for minimal resource usage while maintaining core functionalities.",
+  "category": "AI",
+  "image": "alpine/openclaw:latest",
+  "defaultPort": "18790:18789",
+  "defaultEnv": "GATEWAY_CONTROLUI_ALLOWEDORIGINS=http://ip:18790,https://domain.com\nOPENCLAW_SECRET_KEY=changeme\nOPENCLAW_DB_URL=postgresql://postgres:changeme@postgres:5432/openclaw_alpine",
+  "defaultVolumes": "/srv/openclaw-alpine:/app/data",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "AI",
+    "Agents",
+    "Orchestration"
+  ],
+  "presentation": {
+    "icon": "https://openclaw.ai/favicon-32.png",
+    "installs": 750
+  }
+}

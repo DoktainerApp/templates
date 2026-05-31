@@ -1,0 +1,35 @@
+{
+  "id": "9router",
+  "name": "9Router",
+  "desc": "9Router is a self-hosted AI agent orchestration platform that provides a local gateway for managing and routing requests to various LLM backends. It enables users to create, manage, and monitor AI agents with support for multiple models and dynamic routing based on request parameters. Features include a web-based dashboard, API access, and extensible plugin architecture.",
+  "category": "AI",
+  "image": "decolua/9router:latest",
+  "defaultPort": "20128:20128",
+  "defaultEnv": "PORT=20128\nNEXT_PUBLIC_BASE_URL=http://IP_SERVER:20128",
+  "defaultVolumes": "/srv/9router-data:/root/9router",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "AI",
+    "Orchestration",
+    "Management"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/openrouter/2496ED",
+    "installs": 480
+  },
+  "presets": [
+    {
+      "id": "9router-development",
+      "name": "9Router Development",
+      "desc": "Preset with development-friendly defaults for local testing and iteration",
+      "defaultEnv": "PORT=20128\nNEXT_PUBLIC_BASE_URL=http://IP_SERVER:20128"
+    },
+    {
+      "id": "9router-production",
+      "name": "9Router Production",
+      "desc": "Preset optimized for production deployments with secure defaults",
+      "defaultEnv": "PORT=20128\nHOSTNAME=0.0.0.0\nNEXT_PUBLIC_BASE_URL=http://IP_SERVER:20128"
+    }
+  ]
+}

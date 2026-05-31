@@ -1,0 +1,20 @@
+{
+  "id": "supabase-postgres",
+  "name": "Supabase PostgreSQL Engine",
+  "desc": "Lightweight Supabase setup using PostgreSQL only",
+  "category": "Database",
+  "image": "supabase/postgres:17.6.1.108-multigres",
+  "defaultPort": "5432:5432",
+  "defaultEnv": "POSTGRES_DB=postgres\nPOSTGRES_USER=postgres\nPOSTGRES_PASSWORD=changeme",
+  "defaultVolumes": "/srv/supabase-postgres:/var/lib/postgresql/data",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Database",
+    "PostgreSQL",
+    "Supabase"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/supabase/3ECF8E"
+  }
+}

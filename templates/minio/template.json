@@ -1,0 +1,21 @@
+{
+  "id": "minio",
+  "name": "MinIO",
+  "desc": "High-performance S3-compatible object storage",
+  "category": "Storage",
+  "image": "minio/minio:latest",
+  "defaultPort": "9000:9000,9001:9001",
+  "defaultEnv": "MINIO_ROOT_USER=minioadmin\nMINIO_ROOT_PASSWORD=changeme",
+  "defaultVolumes": "/srv/minio:/data",
+  "defaultCommand": "server /data --console-address :9001",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "S3",
+    "Storage"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/minio/C72E49",
+    "installs": 210
+  }
+}

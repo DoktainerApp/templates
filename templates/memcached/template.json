@@ -1,0 +1,18 @@
+{
+  "id": "memcached",
+  "name": "Memcached",
+  "desc": "High-performance distributed memory object cache",
+  "category": "Cache",
+  "image": "memcached:1.6-alpine",
+  "defaultPort": "11211:11211",
+  "defaultEnv": "",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Cache",
+    "Memory"
+  ],
+  "presentation": {
+    "installs": 190
+  }
+}

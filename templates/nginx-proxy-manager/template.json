@@ -1,0 +1,20 @@
+{
+  "id": "nginx-proxy-manager",
+  "name": "Nginx Proxy Manager",
+  "desc": "Reverse proxy manager with a friendly web UI",
+  "category": "Proxy",
+  "image": "jc21/nginx-proxy-manager:latest",
+  "defaultPort": "80:80,81:81,443:443",
+  "defaultEnv": "",
+  "defaultVolumes": "/srv/npm/data:/data,/srv/npm/letsencrypt:/etc/letsencrypt",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Proxy",
+    "UI"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/nginxproxymanager/F15833",
+    "installs": 610
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "drupal",
+  "name": "Drupal",
+  "desc": "Enterprise-grade CMS for structured content sites",
+  "category": "CMS",
+  "image": "drupal:10-apache",
+  "defaultPort": "8081:80",
+  "defaultEnv": "",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "PHP",
+    "CMS"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/drupal/0678BE",
+    "installs": 410
+  }
+}

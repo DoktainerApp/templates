@@ -1,0 +1,41 @@
+{
+  "id": "laravelfans",
+  "name": "Laravel Fans",
+  "desc": "PHP framework starter image with writable project volume and Laravel-ready presets from laravelfans",
+  "category": "Framework",
+  "image": "laravelfans/laravel:12.58.0-dev",
+  "defaultPort": "8001:8000",
+  "defaultEnv": "APP_NAME=Laravel\nAPP_ENV=production\nAPP_DEBUG=false\nAPP_URL=http://localhost:8001\nLARAVEL_DATABASE_HOST=mysql\nLARAVEL_DATABASE_PORT_NUMBER=3306\nLARAVEL_DATABASE_NAME=laravel\nLARAVEL_DATABASE_USER=laravel\nLARAVEL_DATABASE_PASSWORD=secret",
+  "defaultVolumes": "/srv/laravel:/laravel/laravel",
+  "defaultCommand": "sh -c 'cd /laravel/laravel && if [ ! -f artisan ]; then echo \"Laravel not found, initializing...\"; composer create-project laravel/laravel .; fi && until php artisan migrate --force; do echo Waiting-DB...; sleep 5; done && php artisan serve --host=0.0.0.0 --port=8000'",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "PHP",
+    "Framework",
+    "Artisan"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/laravel/5CD04E",
+    "installs": 150
+  },
+  "presets": [
+    {
+      "id": "dev",
+      "name": "Development",
+      "desc": "Enable debug mode and local-style environment values",
+      "defaultEnv": "APP_NAME=Laravel\nAPP_ENV=local\nAPP_DEBUG=true\nAPP_URL=http://localhost:8001\nLARAVEL_DATABASE_HOST=mysql\nLARAVEL_DATABASE_PORT_NUMBER=3306\nLARAVEL_DATABASE_NAME=laravel\nLARAVEL_DATABASE_USER=laravel\nLARAVEL_DATABASE_PASSWORD=secret",
+      "defaultVolumes": "/srv/laravel:/laravel/laravel",
+      "defaultCommand": "sh -c 'cd /laravel/laravel && if [ ! -f artisan ]; then echo \"Laravel not found, initializing...\"; composer create-project laravel/laravel .; fi && until php artisan migrate --force; do echo Waiting-DB...; sleep 5; done && php artisan serve --host=0.0.0.0 --port=8000'"
+    },
+    {
+      "id": "production",
+      "name": "Production",
+      "desc": "Hardened defaults for long-running production containers",
+      "defaultEnv": "APP_NAME=Laravel\nAPP_ENV=production\nAPP_DEBUG=false\nAPP_URL=https://example.com\nLARAVEL_DATABASE_HOST=mysql\nLARAVEL_DATABASE_PORT_NUMBER=3306\nLARAVEL_DATABASE_NAME=laravel\nLARAVEL_DATABASE_USER=laravel\nLARAVEL_DATABASE_PASSWORD=secret",
+      "defaultVolumes": "/srv/laravel:/laravel/laravel",
+      "defaultCommand": "sh -c 'cd /laravel/laravel && if [ ! -f artisan ]; then echo \"Laravel not found, initializing...\"; composer create-project laravel/laravel .; fi && until php artisan migrate --force; do echo Waiting-DB...; sleep 5; done && php artisan serve --host=0.0.0.0 --port=8000'",
+      "restartPolicy": "always"
+    }
+  ]
+}

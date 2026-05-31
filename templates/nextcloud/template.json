@@ -1,0 +1,20 @@
+{
+  "id": "nextcloud",
+  "name": "Nextcloud",
+  "desc": "Self-hosted collaboration and file sync platform",
+  "category": "Storage",
+  "image": "nextcloud:29-apache",
+  "defaultPort": "8085:80",
+  "defaultEnv": "PUID=1000\nPGID=1000\nTZ=UTC",
+  "defaultVolumes": "/srv/nextcloud:/var/www/html",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Files",
+    "Collaboration"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/nextcloud/0082C9",
+    "installs": 700
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "umami",
+  "name": "Umami",
+  "desc": "Simple, fast, privacy-focused web analytics",
+  "category": "DevOps",
+  "image": "umami-software/umami:latest",
+  "defaultPort": "3000:3000",
+  "defaultEnv": "DATABASE_URL=postgresql://umami:umami@postgres:5432/umami",
+  "defaultVolumes": "/srv/umami:/app/data",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Analytics",
+    "Web"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/umami/00BFFF",
+    "installs": 50
+  }
+}

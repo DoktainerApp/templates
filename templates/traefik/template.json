@@ -1,0 +1,20 @@
+{
+  "id": "traefik",
+  "name": "Traefik Proxy",
+  "desc": "Modern HTTP reverse proxy and load balancer",
+  "category": "Proxy",
+  "image": "traefik:v3",
+  "defaultPort": "80:80,443:443,8080:8080",
+  "defaultEnv": "TRAEFIK_API_DASHBOARD=true\nTRAEFIK_API_INSECURE=true\nTRAEFIK_ENTRYPOINTS_WEB_ADDRESS=:80\nTRAEFIK_ENTRYPOINTS_WEBSECURE_ADDRESS=:443\nTRAEFIK_PROVIDERS_DOCKER=true\nTRAEFIK_PROVIDERS_DOCKER_EXPOSEDBYDEFAULT=false\nTRAEFIK_CERTIFICATESRESOLVERS_LE_ACME_EMAIL=you@example.com\nTRAEFIK_CERTIFICATESRESOLVERS_LE_ACME_STORAGE=/letsencrypt/acme.json\nTRAEFIK_CERTIFICATESRESOLVERS_LE_ACME_HTTPCHALLENGE=true\nTRAEFIK_CERTIFICATESRESOLVERS_LE_ACME_HTTPCHALLENGE_ENTRYPOINT=web\nTRAEFIK_LOG_LEVEL=INFO",
+  "defaultVolumes": "/var/run/docker.sock:/var/run/docker.sock,/srv/traefik/letsencrypt:/letsencrypt/letsencrypt",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "HTTP",
+    "SSL"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/traefikproxy/24A1C1",
+    "installs": 560
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "waha",
+  "name": "WhatsApp HTTP API (WAHA) Core",
+  "desc": "WAHA - WhatsApp HTTP API that you can install on your own server and run in less than 5 minutes!",
+  "category": "DevOps",
+  "image": "devlikeapro/waha:latest",
+  "defaultPort": "3000:3000",
+  "defaultEnv": "WHATSAPP_API_KEY=CHANGE_THIS_TO_RANDOM_32_CHAR\nWAHA_DASHBOARD_ENABLED=true\nWAHA_DASHBOARD_USERNAME=admin\nWAHA_DASHBOARD_PASSWORD=supersecretpassword",
+  "defaultVolumes": "/srv/waha/sessions:/app/.sessions,/srv/waha/media:/app/.media",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Messaging",
+    "WhatsApp",
+    "API"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/whatsapp/25D366",
+    "installs": 60
+  }
+}

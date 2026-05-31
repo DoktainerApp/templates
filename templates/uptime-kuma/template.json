@@ -1,0 +1,20 @@
+{
+  "id": "uptime-kuma",
+  "name": "Uptime Kuma",
+  "desc": "Self-hosted uptime monitoring and status pages",
+  "category": "Monitoring",
+  "image": "louislam/uptime-kuma:1",
+  "defaultPort": "3002:3001",
+  "defaultEnv": "",
+  "defaultVolumes": "/srv/uptime-kuma:/app/data",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Uptime",
+    "Status"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/uptimekuma/5CDD8B",
+    "installs": 520
+  }
+}

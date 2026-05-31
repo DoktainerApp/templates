@@ -1,0 +1,21 @@
+{
+  "id": "rust",
+  "name": "Rust",
+  "desc": "Rust runtime template for building and running Rust applications",
+  "category": "Runtime",
+  "image": "rust:1.70-alpine",
+  "defaultPort": "8080:8080",
+  "defaultEnv": "RUST_ENV=production\nPORT=8080",
+  "defaultVolumes": "/srv/rust-app:/app",
+  "defaultCommand": "sh -c \"cd /app && if [ -f Cargo.toml ]; then cargo build && cargo run; else tail -f /dev/null; fi\"",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Rust",
+    "Framework"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/rust/5FA04E",
+    "installs": 220
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "erd-builder-pro",
+  "name": "ERD Builder Pro",
+  "desc": "ERD Builder Pro is a professional-grade, high-performance web application designed for developers and database architects to build, document, and visualize complex data structures.",
+  "category": "Productivity",
+  "image": "bekenweb/erd-builder-pro:latest",
+  "defaultPort": "3000:3000",
+  "defaultEnv": "SUPABASE_URL=your_supabase_url\nSUPABASE_SERVICE_ROLE_KEY=your_service_role_key\nR2_ACCOUNT_ID=your_cloudflare_id\nR2_ACCESS_KEY=your_cloudflare_access_key\nR2_SECRET_KEY=your_cloudflare_secret_key\nR2_BUCKET_NAME=your_cloudflare_bucket_name\nR2_PUBLIC_URL=your_public_cdn_url\nVITE_SUPABASE_URL=your_supabase_url\nVITE_SUPABASE_ANON_KEY=your_anon_key\nVITE_ENABLE_GUEST_MODE=true",
+  "defaultVolumes": "/srv/erdbuilderpro:/var/app/erdbuilderpro",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Productivity",
+    "Devtool"
+  ],
+  "presentation": {
+    "icon": "https://github.com/hadziqmtqn/erd-builder-pro/blob/master/public/favicon.png?raw=true",
+    "installs": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "django",
+  "name": "Django",
+  "desc": "Python web framework template with Gunicorn and static file support",
+  "category": "Framework",
+  "image": "python:3.12-alpine",
+  "defaultPort": "8002:8000",
+  "defaultEnv": "DJANGO_SETTINGS_MODULE=app.settings\nPYTHONUNBUFFERED=1",
+  "defaultVolumes": "/srv/django:/app",
+  "defaultCommand": "sh -c \"cd /app && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi; python manage.py migrate 2>/dev/null || true; python manage.py runserver 0.0.0.0:8000\"",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Python",
+    "Framework"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/django/092E20",
+    "installs": 410
+  }
+}

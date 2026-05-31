@@ -1,0 +1,20 @@
+{
+  "id": "mysql",
+  "name": "MySQL",
+  "desc": "Widely used relational database for web applications",
+  "category": "Database",
+  "image": "mysql:8",
+  "defaultPort": "3306:3306",
+  "defaultEnv": "MYSQL_DATABASE=mydb\nMYSQL_USER=username\nMYSQL_PASSWORD=changeme\nMYSQL_ROOT_PASSWORD=changeme",
+  "defaultVolumes": "/srv/mysql:/var/lib/mysql",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "SQL",
+    "InnoDB"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/mysql/4479A1",
+    "installs": 910
+  }
+}

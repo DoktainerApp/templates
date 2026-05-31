@@ -1,0 +1,18 @@
+{
+  "id": "phpmyadmin",
+  "name": "phpMyAdmin",
+  "desc": "Web-based MySQL/MariaDB administration tool",
+  "category": "Database",
+  "image": "phpmyadmin/phpmyadmin:latest",
+  "defaultPort": "8080:80",
+  "defaultEnv": "PMA_HOST=mysql",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Database",
+    "Admin"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/phpmyadmin/6C78AF"
+  }
+}

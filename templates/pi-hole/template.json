@@ -1,0 +1,19 @@
+{
+  "id": "pi-hole",
+  "name": "Pi-hole",
+  "desc": "Network-wide ad blocking and monitoring with web UI",
+  "category": "Network",
+  "image": "pihole/pihole:latest",
+  "defaultPort": "3006:80,53:53/tcp,53:53/udp",
+  "defaultEnv": "TZ=UTC\nWEBPASSWORD=changeme\nDNS1=8.8.8.8\nDNS2=8.8.4.4",
+  "defaultVolumes": "/srv/pihole:/etc/pihole,/srv/pihole-dnsmasq:/etc/dnsmasq.d",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "DNS",
+    "Adblock"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/pihole/96060C"
+  }
+}

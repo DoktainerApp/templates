@@ -1,0 +1,21 @@
+{
+  "id": "nodejs",
+  "name": "Node.js App",
+  "desc": "Deploy any Node.js application easily",
+  "category": "Runtime",
+  "image": "node:20-alpine",
+  "defaultPort": "3000:3000",
+  "defaultEnv": "NODE_ENV=production\nPORT=3000",
+  "defaultVolumes": "/srv/node-app:/app",
+  "defaultCommand": "sh -c \"cd /app && if [ -f package.json ]; then npm install && npm start; else tail -f /dev/null; fi\"",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Node",
+    "JS"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/nodedotjs/5FA04E",
+    "installs": 650
+  }
+}

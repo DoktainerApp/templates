@@ -1,0 +1,19 @@
+{
+  "id": "filebrowser",
+  "name": "File Browser",
+  "desc": "Simple web-based file manager for server directories",
+  "category": "Storage",
+  "image": "filebrowser/filebrowser:latest",
+  "defaultPort": "8086:80",
+  "defaultEnv": "PUID=1000\nPGID=1000\nTZ=UTC\nFILEBROWSER_AUTH_METHOD=basic",
+  "defaultVolumes": "/srv/filebrowser:/srv",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Files",
+    "UI"
+  ],
+  "presentation": {
+    "installs": 280
+  }
+}

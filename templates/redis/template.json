@@ -1,0 +1,20 @@
+{
+  "id": "redis",
+  "name": "Redis",
+  "desc": "In-memory data structure store and cache",
+  "category": "Cache",
+  "image": "redis:7-alpine",
+  "defaultPort": "6379:6379",
+  "defaultEnv": "",
+  "defaultVolumes": "/srv/redis:/data",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Cache",
+    "Queue"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/redis/DC382D",
+    "installs": 720
+  }
+}

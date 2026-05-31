@@ -1,0 +1,20 @@
+{
+  "id": "postgres",
+  "name": "PostgreSQL",
+  "desc": "Powerful open-source object-relational database",
+  "category": "Database",
+  "image": "postgres:16-alpine",
+  "defaultPort": "5432:5432",
+  "defaultEnv": "POSTGRES_DB=mydb\nPOSTGRES_USER=admin\nPOSTGRES_PASSWORD=changeme",
+  "defaultVolumes": "/srv/postgres:/var/lib/postgresql/data",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "SQL",
+    "DB"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/postgresql/4169E1",
+    "installs": 870
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "docker",
+  "name": "Docker",
+  "desc": "Containerization platform for building, shipping, and running applications",
+  "category": "DevOps",
+  "image": "docker:latest",
+  "defaultPort": "2375:2375",
+  "defaultEnv": "DOCKER_TLS_CERTDIR=/certs",
+  "defaultVolumes": "/var/run/docker.sock:/var/run/docker.sock",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Container",
+    "Docker"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/docker/2496ED"
+  }
+}

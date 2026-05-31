@@ -1,0 +1,20 @@
+{
+  "id": "mailhog",
+  "name": "MailHog",
+  "desc": "Email testing tool with web UI and SMTP server",
+  "category": "DevOps",
+  "image": "mailhog/mailhog:latest",
+  "defaultPort": "8025:8025,1025:1025",
+  "defaultEnv": "",
+  "defaultVolumes": "",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Email",
+    "Testing"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/maildotru/005FF9",
+    "installs": 220
+  }
+}

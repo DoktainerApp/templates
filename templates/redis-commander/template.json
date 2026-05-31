@@ -1,0 +1,20 @@
+{
+  "id": "redis-commander",
+  "name": "Redis Commander",
+  "desc": "Web-based Redis management tool",
+  "category": "DevOps",
+  "image": "rediscommander/redis-commander:latest",
+  "defaultPort": "8080:8081",
+  "defaultEnv": "REDIS_HOSTS=local:redis:6379",
+  "defaultVolumes": "",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Redis",
+    "GUI"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/redis/DC382D",
+    "installs": 180
+  }
+}

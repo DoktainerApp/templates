@@ -1,0 +1,22 @@
+{
+  "id": "golang",
+  "name": "Golang",
+  "desc": "Go runtime template for building and running Go applications",
+  "category": "Runtime",
+  "image": "golang:1.20-alpine",
+  "defaultPort": "8080:8080",
+  "defaultEnv": "GO_ENV=production\nPORT=8080",
+  "defaultVolumes": "/srv/go-app:/app",
+  "defaultCommand": "sh -c \"cd /app && if [ -f go.mod ]; then go mod tidy && go run main.go; else tail -f /dev/null; fi\"",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Go",
+    "Golang",
+    "Framework"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/goland/00ADD8",
+    "installs": 290
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "codeigniter",
+  "name": "CodeIgniter4",
+  "desc": "PHP framework template for building web applications with CodeIgniter 4",
+  "category": "Framework",
+  "image": "shinsenter/codeigniter4:php8.2-apache",
+  "defaultPort": "8081:80",
+  "defaultEnv": "CI_ENVIRONMENT=production",
+  "defaultVolumes": "/srv/codeigniter4:/app",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "PHP",
+    "Framework",
+    "CodeIgniter"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/codeigniter/FF2D20"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "caddy",
+  "name": "Caddy",
+  "desc": "Automatic HTTPS web server with simple configuration",
+  "category": "Web Server",
+  "image": "caddy:2-alpine",
+  "defaultPort": "8083:80,8443:443",
+  "defaultEnv": "",
+  "defaultVolumes": "/srv/caddy/data:/data,/srv/caddy/config:/config",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "HTTPS",
+    "TLS"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/caddy/1F88C0",
+    "installs": 760
+  }
+}

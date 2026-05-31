@@ -1,0 +1,20 @@
+{
+  "id": "adminer",
+  "name": "Adminer",
+  "desc": "Lightweight web-based database management tool",
+  "category": "DevOps",
+  "image": "adminer:latest",
+  "defaultPort": "8089:8080",
+  "defaultEnv": "",
+  "defaultVolumes": "",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Database",
+    "GUI"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/adminer/8C7EE0",
+    "installs": 320
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "supabase",
+  "name": "Supabase (All-in-One)",
+  "desc": "Unofficial all-in-one Supabase container",
+  "category": "Database",
+  "image": "khulnasoft/supabase-all-in-one:latest",
+  "defaultPort": "8000:8000,3000:3000,5432:5432",
+  "defaultEnv": "POSTGRES_DB=postgres\nPOSTGRES_USER=postgres\nPOSTGRES_PASSWORD=changeme\nJWT_SECRET=supersecretjwt\nSITE_URL=http://localhost\nAPI_EXTERNAL_URL=http://localhost:8000",
+  "defaultVolumes": "/srv/supabase:/data",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Database",
+    "Supabase"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/supabase/3ECF8E"
+  }
+}

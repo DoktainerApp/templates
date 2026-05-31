@@ -1,0 +1,20 @@
+{
+  "id": "grafana",
+  "name": "Grafana",
+  "desc": "Beautiful metrics dashboards and analytics",
+  "category": "Monitoring",
+  "image": "grafana/grafana:latest",
+  "defaultPort": "3000:3000",
+  "defaultEnv": "GF_SECURITY_ADMIN_PASSWORD=admin",
+  "defaultVolumes": "/srv/grafana:/var/lib/grafana",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Metrics",
+    "UI"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/grafana/F46800",
+    "installs": 430
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "phpmyadmin-dev",
+  "name": "phpMyAdmin (Development)",
+  "desc": "Web-based MySQL/MariaDB administration tool with development-friendly defaults",
+  "category": "Database",
+  "image": "phpmyadmin/phpmyadmin:latest",
+  "defaultPort": "8080:80",
+  "defaultEnv": "PMA_HOST=mysql\nPMA_USER=root\nPMA_PASSWORD=changeme\nPMA_ARBITRARY=1",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Database",
+    "Admin"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/phpmyadmin/F38020",
+    "installs": 620
+  }
+}

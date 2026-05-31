@@ -1,0 +1,20 @@
+{
+  "id": "jenkins",
+  "name": "Jenkins",
+  "desc": "Automation server for CI/CD pipelines",
+  "category": "DevOps",
+  "image": "jenkins/jenkins:lts-jdk17",
+  "defaultPort": "8087:8080,50000:50000",
+  "defaultEnv": "JAVA_OPTS=-Djenkins.install.runSetupWizard=false",
+  "defaultVolumes": "/srv/jenkins:/var/jenkins_home",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "CI/CD",
+    "Automation"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/jenkins/D24939",
+    "installs": 620
+  }
+}

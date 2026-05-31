@@ -1,0 +1,21 @@
+{
+  "id": "flask",
+  "name": "Flask",
+  "desc": "Lightweight Python web framework template with Gunicorn",
+  "category": "Framework",
+  "image": "python:3.12-alpine",
+  "defaultPort": "8003:8000",
+  "defaultEnv": "FLASK_APP=app.py\nFLASK_ENV=production\nFLASK_RUN_HOST=0.0.0.0\nFLASK_RUN_PORT=8000\nPYTHONUNBUFFERED=1",
+  "defaultVolumes": "/srv/flask:/app",
+  "defaultCommand": "sh -c \"cd /app && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi; flask run --host=0.0.0.0 --port=8000\"",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Python",
+    "Framework"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/flask/5FA04E",
+    "installs": 360
+  }
+}

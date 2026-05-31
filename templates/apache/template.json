@@ -1,0 +1,19 @@
+{
+  "id": "apache",
+  "name": "Apache HTTP Server",
+  "desc": "Classic and reliable HTTP web server",
+  "category": "Web Server",
+  "image": "httpd:2.4-alpine",
+  "defaultPort": "8082:80",
+  "defaultEnv": "",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "HTTP",
+    "Static"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/apache/D22128",
+    "installs": 540
+  }
+}

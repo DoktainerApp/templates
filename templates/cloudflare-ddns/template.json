@@ -1,0 +1,18 @@
+{
+  "id": "cloudflare-ddns",
+  "name": "Cloudflare DDNS",
+  "desc": "Dynamic DNS updater for Cloudflare-managed domains",
+  "category": "Network",
+  "image": "oznu/cloudflare-ddns:latest",
+  "defaultPort": "",
+  "defaultEnv": "API_KEY=replace-me\nEMAIL=replace-me\nZONE=example.com\nRECORD=home",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "DNS",
+    "Dynamic DNS"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/cloudflare/F38020"
+  }
+}

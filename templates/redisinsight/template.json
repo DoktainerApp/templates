@@ -1,0 +1,20 @@
+{
+  "id": "redisinsight",
+  "name": "RedisInsight",
+  "desc": "GUI for Redis database management and monitoring",
+  "category": "DevOps",
+  "image": "redislabs/redisinsight:latest",
+  "defaultPort": "8004:8001",
+  "defaultEnv": "",
+  "defaultVolumes": "redisinsight-data:/db",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Redis",
+    "GUI"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/redis/DC382D",
+    "installs": 200
+  }
+}

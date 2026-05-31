@@ -1,0 +1,20 @@
+{
+  "id": "wordpress",
+  "name": "WordPress",
+  "desc": "Popular CMS for websites and blogs",
+  "category": "CMS",
+  "image": "wordpress:latest",
+  "defaultPort": "8080:80",
+  "defaultEnv": "WORDPRESS_DB_HOST=mysql:3306\nWORDPRESS_DB_NAME=wordpress\nWORDPRESS_DB_USER=wp\nWORDPRESS_DB_PASSWORD=changeme",
+  "defaultVolumes": "/srv/wordpress:/var/www/html",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "PHP",
+    "MySQL"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/wordpress/21759B",
+    "installs": 1240
+  }
+}

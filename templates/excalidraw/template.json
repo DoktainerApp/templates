@@ -1,0 +1,21 @@
+{
+  "id": "excalidraw",
+  "name": "Excalidraw",
+  "desc": "Virtual whiteboard for sketching and diagramming collaboratively",
+  "category": "Productivity",
+  "image": "excalidraw/excalidraw:latest",
+  "defaultPort": "5000:80",
+  "defaultEnv": "",
+  "defaultVolumes": "",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Whiteboard",
+    "Diagram",
+    "Collaboration"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/excalidraw/6965DB",
+    "installs": 430
+  }
+}

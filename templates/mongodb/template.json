@@ -1,0 +1,20 @@
+{
+  "id": "mongodb",
+  "name": "MongoDB",
+  "desc": "Document-based NoSQL database",
+  "category": "Database",
+  "image": "mongo:7",
+  "defaultPort": "27017:27017",
+  "defaultEnv": "MONGO_INITDB_ROOT_USERNAME=admin\nMONGO_INITDB_ROOT_PASSWORD=changeme",
+  "defaultVolumes": "/srv/mongodb:/data/db",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "NoSQL",
+    "DB"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/mongodb/47A248",
+    "installs": 480
+  }
+}

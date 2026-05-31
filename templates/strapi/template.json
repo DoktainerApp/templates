@@ -1,0 +1,20 @@
+{
+  "id": "strapi",
+  "name": "Strapi",
+  "desc": "Headless CMS for APIs, admin panels, and content workflows",
+  "category": "CMS",
+  "image": "strapi/strapi:latest",
+  "defaultPort": "1337:1337",
+  "defaultEnv": "NODE_ENV=production",
+  "defaultVolumes": "/srv/strapi:/srv/app",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Headless",
+    "API"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/strapi/4945FF",
+    "installs": 620
+  }
+}

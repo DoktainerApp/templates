@@ -1,0 +1,36 @@
+{
+  "id": "immich",
+  "name": "Immich",
+  "desc": "Self-hosted photo and video backup platform with external services configuration",
+  "category": "Storage",
+  "image": "ghcr.io/immich-app/immich-server:release",
+  "defaultPort": "2283:2283",
+  "defaultEnv": "TZ=UTC\nUPLOAD_LOCATION=/usr/src/app/upload\nDB_HOSTNAME=postgres\nDB_USERNAME=postgres\nDB_PASSWORD=changeme\nDB_DATABASE_NAME=immich\nREDIS_HOSTNAME=redis",
+  "defaultVolumes": "/srv/immich/library:/usr/src/app/upload",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Photos",
+    "Backup",
+    "Media"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/immich/4250AF",
+    "installs": 460
+  },
+  "presets": [
+    {
+      "id": "library-only",
+      "name": "Library Only",
+      "desc": "Minimal filesystem preset for attaching an existing media path",
+      "defaultVolumes": "/srv/immich/library:/usr/src/app/upload"
+    },
+    {
+      "id": "external-services",
+      "name": "External DB + Redis",
+      "desc": "Preset for environments where Postgres and Redis already exist",
+      "defaultEnv": "TZ=UTC\nUPLOAD_LOCATION=/usr/src/app/upload\nDB_HOSTNAME=postgres.internal\nDB_USERNAME=immich\nDB_PASSWORD=changeme\nDB_DATABASE_NAME=immich\nREDIS_HOSTNAME=redis.internal",
+      "defaultVolumes": "/srv/immich/library:/usr/src/app/upload"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "open-webui",
+  "name": "Open WebUI",
+  "desc": "AI assistant web UI for local or remote LLM backends",
+  "category": "AI",
+  "image": "ghcr.io/open-webui/open-webui:main",
+  "defaultPort": "3004:8080",
+  "defaultEnv": "WEBUI_SECRET_KEY=changeme\nOLLAMA_BASE_URL=http://host.docker.internal:11434",
+  "defaultVolumes": "/srv/open-webui:/app/backend/data",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "AI",
+    "LLM",
+    "Chat"
+  ],
+  "presentation": {
+    "installs": 590
+  },
+  "presets": [
+    {
+      "id": "ollama-local",
+      "name": "Ollama Local",
+      "desc": "Preset for connecting to a host-level Ollama service",
+      "defaultEnv": "WEBUI_SECRET_KEY=changeme\nOLLAMA_BASE_URL=http://host.docker.internal:11434"
+    },
+    {
+      "id": "openai-compatible",
+      "name": "OpenAI-Compatible API",
+      "desc": "Preset for OpenAI-compatible remote inference endpoints",
+      "defaultEnv": "WEBUI_SECRET_KEY=changeme\nOPENAI_API_BASE_URL=https://api.openai.com/v1\nOPENAI_API_KEY=replace-me"
+    }
+  ]
+}

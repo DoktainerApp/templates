@@ -1,0 +1,19 @@
+{
+  "id": "nginx",
+  "name": "Nginx",
+  "desc": "High-performance web server and reverse proxy",
+  "category": "Web Server",
+  "image": "nginx:alpine",
+  "defaultPort": "80:80,443:443",
+  "defaultEnv": "",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "HTTP",
+    "Proxy"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/nginx/009639",
+    "installs": 980
+  }
+}

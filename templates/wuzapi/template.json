@@ -1,0 +1,21 @@
+{
+  "id": "wuzapi",
+  "name": "WuzAPI",
+  "desc": "WuzAPI multi user and multi device REST API Service for Whatsapp.",
+  "category": "DevOps",
+  "image": "asternic/wuzapi:latest",
+  "defaultPort": "8080:8080",
+  "defaultEnv": "WUZAPI_ADMIN_TOKEN=your_32_byte_encryption_key_here\nDB_NAME=wuzapi\nDB_HOST=postgres\nDB_USER=postgres\nDB_PASSWORD=changeme\nDB_PORT=5432\nDB_SSLMODE=false",
+  "defaultVolumes": "/srv/wuzapi:/var/lib/wuzapi",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Messaging",
+    "WhatsApp",
+    "API"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/whatsapp/25D366",
+    "installs": 80
+  }
+}

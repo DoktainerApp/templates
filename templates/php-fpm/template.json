@@ -1,0 +1,19 @@
+{
+  "id": "php-fpm",
+  "name": "PHP-FPM",
+  "desc": "PHP FastCGI Process Manager",
+  "category": "Runtime",
+  "image": "php:8.3-fpm-alpine",
+  "defaultPort": "9000:9000",
+  "defaultEnv": "PHP_MEMORY_LIMIT=256M\nPHP_UPLOAD_MAX_FILESIZE=50M\nPHP_POST_MAX_SIZE=50M\nTZ=UTC",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "PHP",
+    "FPM"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/php/777BB4",
+    "installs": 290
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "ghost",
+  "name": "Ghost",
+  "desc": "Modern publishing platform for blogs and memberships",
+  "category": "CMS",
+  "image": "ghost:5-alpine",
+  "defaultPort": "2368:2368",
+  "defaultEnv": "url=http://localhost:2368",
+  "defaultVolumes": "/srv/ghost:/var/lib/ghost/content",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Blog",
+    "Node.js"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/ghost/21759B",
+    "installs": 870
+  }
+}

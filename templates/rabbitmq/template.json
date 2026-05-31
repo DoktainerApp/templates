@@ -1,0 +1,20 @@
+{
+  "id": "rabbitmq",
+  "name": "RabbitMQ",
+  "desc": "Reliable message broker with management UI",
+  "category": "Cache",
+  "image": "rabbitmq:3-management-alpine",
+  "defaultPort": "5672:5672,15672:15672",
+  "defaultEnv": "RABBITMQ_DEFAULT_USER=admin\nRABBITMQ_DEFAULT_PASS=changeme",
+  "defaultVolumes": "/srv/rabbitmq:/var/lib/rabbitmq",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Queue",
+    "AMQP"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/rabbitmq/FF6600",
+    "installs": 510
+  }
+}

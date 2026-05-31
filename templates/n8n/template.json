@@ -1,0 +1,34 @@
+{
+  "id": "n8n",
+  "name": "n8n",
+  "desc": "Workflow automation platform with built-in editor UI",
+  "category": "Automation",
+  "image": "n8nio/n8n:latest",
+  "defaultPort": "5678:5678",
+  "defaultEnv": "N8N_HOST=localhost\nN8N_PORT=5678\nN8N_PROTOCOL=http\nWEBHOOK_URL=http://localhost:5678/\nTZ=UTC",
+  "defaultVolumes": "/srv/n8n:/home/node/.n8n",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "Workflow",
+    "Automation",
+    "Jobs"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/n8n/EA4B71",
+    "installs": 680
+  },
+  "presets": [
+    {
+      "id": "basic",
+      "name": "Basic UI",
+      "desc": "Single-container setup for quick workflow testing"
+    },
+    {
+      "id": "reverse-proxy",
+      "name": "Behind Reverse Proxy",
+      "desc": "Preset for running n8n behind an existing HTTPS reverse proxy",
+      "defaultEnv": "N8N_HOST=n8n.example.com\nN8N_PORT=5678\nN8N_PROTOCOL=https\nWEBHOOK_URL=https://n8n.example.com/\nTZ=UTC"
+    }
+  ]
+}

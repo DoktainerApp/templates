@@ -1,0 +1,16 @@
+{
+  "id": "beszel",
+  "name": "Beszel",
+  "desc": "A lightweight server monitoring hub with historical data, docker stats, and alerts.",
+  "category": "Monitoring",
+  "image": "henrygd/beszel:latest",
+  "defaultPort": "8080:8080",
+  "defaultEnv": "",
+  "defaultVolumes": "/srv/beszel:/data",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Monitoring",
+    "Alert"
+  ]
+}

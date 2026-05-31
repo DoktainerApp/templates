@@ -1,0 +1,20 @@
+{
+  "id": "python-fastapi",
+  "name": "FastAPI",
+  "desc": "Python ASGI runtime template for API services",
+  "category": "Runtime",
+  "image": "tiangolo/uvicorn-gunicorn-fastapi:python3.11",
+  "defaultPort": "8000:80",
+  "defaultEnv": "MODULE_NAME=app.main\nPORT=80",
+  "defaultVolumes": "/srv/fastapi:/app",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": [
+    "Python",
+    "API"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/fastapi/009688",
+    "installs": 330
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "adguard-home",
+  "name": "AdGuard Home",
+  "desc": "Network-wide ad and tracker blocking DNS server",
+  "category": "Network",
+  "image": "adguard/adguardhome:latest",
+  "defaultPort": "3005:3000,53:53/tcp,53:53/udp",
+  "defaultEnv": "",
+  "defaultVolumes": "/srv/adguard/work:/opt/adguardhome/work,/srv/adguard/conf:/opt/adguardhome/conf",
+  "restartPolicy": "unless-stopped",
+  "popular": true,
+  "tags": [
+    "DNS",
+    "Adblock"
+  ],
+  "presentation": {
+    "icon": "https://cdn.simpleicons.org/adguard/68BC71"
+  }
+}
