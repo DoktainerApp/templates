@@ -1,0 +1,18 @@
+{
+  "id": "dbx",
+  "name": "DBX",
+  "desc": "15MB, lightweight, cross-platform database client. Supports MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse, SQL Server and more.",
+  "category": "Database",
+  "image": "t8y2/dbx:latest",
+  "defaultPort": "4224:4224",
+  "defaultEnv": "",
+  "defaultVolumes": "dbx-data:/app/data",
+  "defaultCommand": "",
+  "restartPolicy": "unless-stopped",
+  "popular": false,
+  "tags": ["Tools", "Database"],
+  "presentation": {
+    "icon": "logo.png",
+    "installs": 410
+  }
+}
